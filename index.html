@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Passos - Nutrição Animal</title>
+    <!-- Vincula o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-box">
+                <img src="logo.png" alt="Agro Passos Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/55?text=AP'">
+                <div class="logo-text"><span>Agro</span>Passos</div>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" onclick="closeMenu()">Início</a></li>
+                    <li><a href="#produtos" onclick="closeMenu()">Rações & Nutrição</a></li>
+                    <li><a href="#sobre" onclick="closeMenu()">Sobre Nós</a></li>
+                    <li><a href="#contato" onclick="closeMenu()">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero hidden" id="home">
+        <h1><span>AGRO</span>PASSOS</h1>
+        <p>Nutrição Animal de alta performance para cães, gatos e animais de porte. Qualidade para quem você cuida.</p>
+        <a href="#produtos" class="btn-cta">Ver Linha de Produtos</a>
+    </section>
+
+    <!-- PRODUTOS / SERVIÇOS -->
+    <section class="services" id="produtos">
+        <h2 class="section-title hidden">Especialistas em <span>Nutrição Animal</span></h2>
+        
+        <div class="cards-grid">
+            <div class="card hidden">
+                <div class="card-icon">🐶</div>
+                <h3>Linha Canina</h3>
+                <p>Alimentos balanceados e rações premium para o crescimento saudável e energia do seu cão.</p>
+            </div>
+
+            <div class="card hidden">
+                <div class="card-icon">🐱</div>
+                <h3>Linha Felina</h3>
+                <p>Nutrição rica em vitaminas e proteínas selecionadas para a saúde digestiva e do pelo do seu gato.</p>
+            </div>
+
+            <div class="card hidden">
+                <div class="card-icon">🌾</div>
+                <h3>Suplementação</h3>
+                <p>Formulações específicas e insumos para atender a todas as necessidades nutricionais no campo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vincula o arquivo JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
